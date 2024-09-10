@@ -12,6 +12,25 @@ git add .
 git commit -m "initital commit"
 git remote add origin [put copied link of repo here]
 git push -u origin master
-To commit changes Example: If you want to commit changes to index.js and styles.css
 
+
+To commit changes Example: If you want to commit changes to index.js and styles.css
 git add index.js styles.css git commit -m "Updated index.js and styles.css"
+
+To add everything
+git add . 
+git push origin branch_name
+if there are errors
+  git pull origin master
+  merge message show up
+  make a new merge message
+  Esc
+  type ":wq"
+git push origin branch_name
+
+<--------------------------------------------------------------------------------------------------->
+
+NextJS
+
+layout.tsx 
+  > where you put html body and head tag
