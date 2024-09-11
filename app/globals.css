@@ -54,6 +54,7 @@
   --matteblack: rgb(39, 36, 36);
   --white3: rgba(255, 255, 255, 0.3);
   --white: rgb(255, 255, 255);
+  --green: rgb(10, 139, 10);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -75,6 +76,11 @@ body {
   padding: 0;
   height: 100vh;
   width: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
 }
 
 @layer utilities {

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+}
+
+.signup-container {
+    background-color: var(--matteblack);
+    padding: 2% 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px var(--cyanshadow);
+    border: none;
+    outline: none;
+    align-items: center;
+}
+
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  */
+}
+
+.signup-container h1 {
+    text-align: center;
+}
+
+.email-container, .account-name-container, 
+.passwords-container, .role-select-container {
+    display: grid;
+    margin: 5px 0;
+    
+    /* border: 1px solid white; */
+}
+
+.signup-container input, .signup-container select {
+    padding: 5px;
+    width: 100%;
+}
+
+.warning-msg {
+    text-align: center;
+}
+
+#submit-btn {
+    margin: 10px auto;
+    width: 135px;
+    font-weight: bold;
+    padding: 3% 2%;
+    cursor: pointer;
+    background-color: var(--blackshadow);
+    font-size: 14px;
+    color: var(--white);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#submit-btn:hover {
+    background-color: var(--white3);
+}
