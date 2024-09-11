@@ -2,8 +2,6 @@ Originally, this Project was created in Vite. For a beginner, Vite is easier to 
 
 Now, here we are next JS (with version control sheesh)
 
-<---------------------------------------------------------------------------------------------------->
-
 <h1>Initializing git on this project</h1>
 
 1. cd "project name" <br />
@@ -27,8 +25,6 @@ git add index.js styles.css git commit -m "Updated index.js and styles.css" <br 
       Esc <br />
       type ":wq" <br />
 5. git push origin branch_name <br />
-
-<--------------------------------------------------------------------------------------------------->
 
 <h1>NextJS</h1> <br />
 
