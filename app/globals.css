@@ -24,17 +24,34 @@
   src: url('../public/fonts/Montserrat/static/Montserrat-Light.ttf');
   font-weight: 400;
 }
-
+ 
 @font-face {
   font-family: Gidole;
   src: url('../public/fonts/gidole/Gidole-Regular.ttf');
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url('../public/fonts/Roboto/Roboto-Black.ttf');
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../public/fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../public/fonts/Roboto/Roboto-Thin.ttf');
+  font-weight: 400;
+}
+
 :root {
   --darkBlueBackground: #092635;
-  --cyanshadow: #74e7f6;
+  --cyanshadow: #68d2e0;
   --blackshadow: #000000;
-  --matteblack: rgb(45, 44, 44);
+  --matteblack: rgb(39, 36, 36);
   --white3: rgba(255, 255, 255, 0.3);
   --white: rgb(255, 255, 255);
 }
@@ -46,10 +63,18 @@
   }
 } */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--white);
   background-color: var(--darkBlueBackground);
   font-family: Montserrat, Gidole;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
 }
 
 @layer utilities {
