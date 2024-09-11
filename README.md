@@ -40,3 +40,5 @@ Example
   accessing 1.png in the image folder of the public folder
   <link rel="icon" href="/images/1.png">
   should be like this since public is a root folder
+
+don't forget to add 'use client' on client components
