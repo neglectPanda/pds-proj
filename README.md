@@ -14,31 +14,31 @@ Initializing git on this project
 6. git push -u origin master <br />
 
 
-To commit changes Example: If you want to commit changes to index.js and styles.css
-git add index.js styles.css git commit -m "Updated index.js and styles.css"
+To commit changes Example: If you want to commit changes to index.js and styles.css <br />
+git add index.js styles.css git commit -m "Updated index.js and styles.css" <br />
 
-To add everything
-git add . 
-git push origin branch_name
-if there are errors
-  git pull origin master
-  merge message show up
-  make a new merge message
-  Esc
-  type ":wq"
-git push origin branch_name
+To add everything <br />
+git add . <br />
+git push origin branch_name <br />
+if there are errors <br />
+  git pull origin master <br />
+  merge message show up <br />
+  make a new merge message <br />
+  Esc <br />
+  type ":wq" <br />
+git push origin branch_name <br />
 
 <--------------------------------------------------------------------------------------------------->
 
-NextJS
+<h1>NextJS</h1> <br />
 
-layout.tsx 
+layout.tsx <br />
   > where you put html body and head tag
 
 in the directory structure, you should make sure that fonts and images are in a public folder. to access specifics:
-Example
-  accessing 1.png in the image folder of the public folder
-  <link rel="icon" href="/images/1.png">
-  should be like this since public is a root folder
+Example <br />
+  accessing 1.png in the image folder of the public folder <br />
+  <link rel="icon" href="/images/1.png"> <br />
+  should be like this since public is a root folder <br />
 
-don't forget to add 'use client' on client components
+don't forget to add 'use client' on client components <br />
