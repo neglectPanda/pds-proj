@@ -34,3 +34,9 @@ NextJS
 
 layout.tsx 
   > where you put html body and head tag
+
+in the directory structure, you should make sure that fonts and images are in a public folder. to access specifics:
+Example
+  accessing 1.png in the image folder of the public folder
+  <link rel="icon" href="/images/1.png">
+  should be like this since public is a root folder
