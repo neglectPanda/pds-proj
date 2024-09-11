@@ -4,7 +4,7 @@ Now, here we are next JS (with version control sheesh)
 <hr>
 
 <h1>Our firsts</h1>
-1. NextJS documentation of what was done here
+1. NextJS documentation of what was done here <br />
 2. Version Control (Git and Github how to)
 
 <h1>Initializing git on this project</h1>
