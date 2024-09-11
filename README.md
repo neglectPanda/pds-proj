@@ -6,12 +6,12 @@ Now, here we are next JS (with version control sheesh)
 
 Initializing git on this project
 
-cd "project name"
-git init
-git add .
-git commit -m "initital commit"
-git remote add origin [put copied link of repo here]
-git push -u origin master
+1. cd "project name" <br />
+2. git init <br />
+3. git add . <br />
+4. git commit -m "initital commit" <br />
+5. git remote add origin [put copied link of repo here] <br />
+6. git push -u origin master <br />
 
 
 To commit changes Example: If you want to commit changes to index.js and styles.css
