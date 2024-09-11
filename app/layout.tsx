@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <head>
                 <title>Personal Data Sheet</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="./images/1.png" />
+                <link rel="icon" href="/images/1.png" />
             </head>
             <body>
                 {children}

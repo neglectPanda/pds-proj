@@ -4,30 +4,30 @@
 
 @font-face {
   font-family: Montserrat;
-  src: url('./fonts/Montserrat/static/Montserrat-Black.ttf');
+  src: url('../public/fonts/Montserrat/static/Montserrat-Black.ttf');
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url('./fonts/Montserrat/static/Montserrat-Bold.ttf');
+  src: url('../public/fonts/Montserrat/static/Montserrat-Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url('./fonts/Montserrat/static/Montserrat-ExtraLight.ttf');
+  src: url('../public/fonts/Montserrat/static/Montserrat-ExtraLight.ttf');
   font-weight: 200;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url('./fonts/Montserrat/static/Montserrat-Light.ttf');
+  src: url('../public/fonts/Montserrat/static/Montserrat-Light.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: Gidole;
-  src: url('./fonts/gidole/Gidole-Regular.ttf');
+  src: url('../public/fonts/gidole/Gidole-Regular.ttf');
 }
 
 :root {
