@@ -3,13 +3,44 @@ import './Signup.css'
 import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
+import { seePasswordOne, seePasswordTwo } from '../../public/images/1image.js';
 
 const Signup = () => {
     const [role, setRole] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [passwordMismatch, setPasswordMismatch] = useState(false);
 
     const handleRoleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setRole(e.target.value);
     }
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(prevState => !prevState); //toggles password visibility
+    }
+
+    const preventCutCopyPaste = (e: React.ClipboardEvent) => {
+        e.preventDefault();
+    }
+
+    const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setPassword(e.target.value);
+        checkPasswordMatch(e.target.value, confirmPassword);
+    }
+
+    const handleConfirmPasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setConfirmPassword(e.target.value);
+        checkPasswordMatch(password, e.target.value);
+    }
+
+    const checkPasswordMatch = (pass: string, confirmPass: string) => {
+        setPasswordMismatch(pass !== confirmPass);
+    }
+
+    //future updates:
+    //  password suggestion msgs
+    //  compare password and confirm password
 
   return (
     <div className='signup-container'>
@@ -28,13 +59,40 @@ const Signup = () => {
 
             <div className="passwords-container">
                 <div className="signup-password-container">
-                    <label htmlFor="signup-password-container">Enter Password</label>
-                    <input type="password" id="signup-password-container"/>
+                    <label htmlFor="signup-password-input">Enter Password</label>
+                    <input 
+                        type={showPassword ? "text" : "password"} 
+                        id="signup-password-input"
+                        onCut={preventCutCopyPaste}
+                        onCopy={preventCutCopyPaste}
+                        onPaste={preventCutCopyPaste}
+                        onChange={handlePasswordChange}
+                        value={password}
+                    />
                 </div>
 
                 <div className="confirm-password-container">
                     <label htmlFor="confirm-password-input">Confirm Password</label>
-                    <input type="password" id='confirm-password-input' />
+                    <div className="confirm-and-show-container">
+                        <input 
+                            type={showPassword ? "text" : "password"} 
+                            id='confirm-password-input' 
+                            onCut={preventCutCopyPaste}
+                            onCopy={preventCutCopyPaste}
+                            onPaste={preventCutCopyPaste}
+                            onChange={handleConfirmPasswordChange}
+                            value={confirmPassword}
+                        />
+                        <button type='button' id='show-password-btn' onClick={togglePasswordVisibility}>
+                            <img 
+                                src={showPassword ? seePasswordTwo.src : seePasswordOne.src} 
+                                alt="Toggle Password Visibility" 
+                            />
+                        </button>
+                    </div>
+                    {passwordMismatch && (
+                        <p className="password-mismatch-msg">Passwords do not match.</p>
+                    )}
                 </div>
             </div>
 

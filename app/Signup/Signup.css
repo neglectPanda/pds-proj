@@ -43,13 +43,27 @@ body {
     /* border: 1px solid white; */
 }
 
+.confirm-password-container {
+    margin-top: 10px;
+}
+
 .signup-container input, .signup-container select {
     padding: 5px;
     width: 100%;
+    outline: none;
+    border: none;
 }
 
 .warning-msg {
     text-align: center;
+}
+
+.password-mismatch-msg {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--warningRed);
+    font-weight: bold;
 }
 
 #submit-btn {
@@ -66,5 +80,40 @@ body {
 }
 
 #submit-btn:hover {
+    background-color: var(--white3);
+    transition: 0.2s ease-in-out;
+}
+
+.login-desc a {
+    color: var(--white);
+}
+
+.login-desc a:hover {
+    color: var(--cyanshadow);
+} 
+
+.confirm-and-show-container {
+    display: flex;
+}
+
+#show-password-btn {
+    width: 30px;
+    padding: 3px 0;
+    border: none;
+    margin: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+#show-password-btn img {
+    width: 85%;
+    padding: 0;
+    margin: 0 3px 0;
+    align-items: center;
+}
+
+#show-password-btn:hover {
     background-color: var(--white3);
 }

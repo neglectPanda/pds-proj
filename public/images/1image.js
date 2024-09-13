@@ -18,6 +18,8 @@ import accountSettingsLogo from './account settings logo.png';
 import notificationLogo from './notification logo.png';
 import blockedUserListLogo from './blocked user list.png';
 import helpAndSupportLogo from './help and support.png';
+import seePasswordOne from './see password 1.png';
+import seePasswordTwo from './see password 2.png';
 
 
 export {
@@ -40,5 +42,7 @@ export {
     accountSettingsLogo,
     notificationLogo,
     blockedUserListLogo,
-    helpAndSupportLogo
+    helpAndSupportLogo,
+    seePasswordOne,
+    seePasswordTwo
 };

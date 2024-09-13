@@ -52,9 +52,10 @@
   --cyanshadow: #68d2e0;
   --blackshadow: #000000;
   --matteblack: rgb(39, 36, 36);
-  --white3: rgba(255, 255, 255, 0.3);
+  --white3: rgba(255, 255, 255, 0.1);
   --white: rgb(255, 255, 255);
   --green: rgb(10, 139, 10);
+  --warningRed: rgb(200, 34, 34);
 }
 
 /* @media (prefers-color-scheme: dark) {
