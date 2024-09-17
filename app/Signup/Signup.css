@@ -23,12 +23,13 @@ body {
     border: none;
     outline: none;
     align-items: center;
+    width: 400px;
 }
 
 .signup-container form {
     display: flex;
     flex-direction: column;
-    /* align-items: center;  */
+    width: 95%;
 }
 
 .signup-container h1 {
@@ -72,16 +73,16 @@ body {
     font-weight: bold;
     padding: 3% 2%;
     cursor: pointer;
-    background-color: var(--blackshadow);
+    background-color: var(--cyanshadow);
     font-size: 14px;
-    color: var(--white);
     border-radius: 10px;
     text-align: center;
 }
 
 #submit-btn:hover {
-    background-color: var(--white3);
-    transition: 0.2s ease-in-out;
+    background-color: var(--cyan2);
+    transition: 0.1s ease-in-out;
+    scale: 1.1;
 }
 
 .login-desc a {

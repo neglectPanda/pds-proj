@@ -5,6 +5,9 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { seePasswordOne, seePasswordTwo } from '../../public/images/1image.js';
 
+//FUTURE UPDATES
+//  > all input fields, if dili complete, then show error
+
 const Signup = () => {
     const [role, setRole] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -38,10 +41,6 @@ const Signup = () => {
         setPasswordMismatch(pass !== confirmPass);
     }
 
-    //future updates:
-    //  password suggestion msgs
-    //  compare password and confirm password
-
   return (
     <div className='signup-container'>
         <h1>Signup</h1>
@@ -49,12 +48,12 @@ const Signup = () => {
         <form action="">
             <div className="email-container">
                 <label htmlFor="signup-email-input">Email</label>
-                <input type="email" id="signup-email-input" placeholder='johndoe@gmail.com' />
+                <input type="email" id="signup-email-input" placeholder='johndoe@gmail.com' required />
             </div>
 
             <div className="account-name-container">
                 <label htmlFor="account name">Account Name</label>
-                <input type="text" id="account-name" placeholder='John Doe'/>
+                <input type="text" id="account-name" placeholder='John Doe' required/>
             </div>
 
             <div className="passwords-container">
@@ -68,6 +67,7 @@ const Signup = () => {
                         onPaste={preventCutCopyPaste}
                         onChange={handlePasswordChange}
                         value={password}
+                        required
                     />
                 </div>
 
@@ -82,6 +82,7 @@ const Signup = () => {
                             onPaste={preventCutCopyPaste}
                             onChange={handleConfirmPasswordChange}
                             value={confirmPassword}
+                            required
                         />
                         <button type='button' id='show-password-btn' onClick={togglePasswordVisibility}>
                             <img 
@@ -98,7 +99,7 @@ const Signup = () => {
 
             <div className="role-select-container">
                 <label htmlFor="role-select">Role</label>
-                <select id="role-select" value={role} onChange={handleRoleChange}>
+                <select id="role-select" value={role} onChange={handleRoleChange} required>
                     <option value="">Select Role</option>
                     <option value="user">User</option>
                     <option value="admin">Admin</option>
