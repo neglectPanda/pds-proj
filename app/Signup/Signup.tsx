@@ -48,12 +48,24 @@ const Signup = () => {
         <form action="">
             <div className="email-container">
                 <label htmlFor="signup-email-input">Email</label>
-                <input type="email" id="signup-email-input" placeholder='johndoe@gmail.com' required />
+                <input 
+                    type="email" 
+                    id="signup-email-input" 
+                    placeholder='johndoe@gmail.com' 
+                    required
+                    autoComplete='off' 
+                />
             </div>
 
             <div className="account-name-container">
                 <label htmlFor="account name">Account Name</label>
-                <input type="text" id="account-name" placeholder='John Doe' required/>
+                <input 
+                    type="text" 
+                    id="account-name" 
+                    placeholder='John Doe' 
+                    required 
+                    autoComplete='off'
+                />
             </div>
 
             <div className="passwords-container">
@@ -68,6 +80,7 @@ const Signup = () => {
                         onChange={handlePasswordChange}
                         value={password}
                         required
+                        autoComplete='off'
                     />
                 </div>
 
@@ -83,6 +96,7 @@ const Signup = () => {
                             onChange={handleConfirmPasswordChange}
                             value={confirmPassword}
                             required
+                            autoComplete='off'
                         />
                         <button type='button' id='show-password-btn' onClick={togglePasswordVisibility}>
                             <img 
@@ -99,7 +113,7 @@ const Signup = () => {
 
             <div className="role-select-container">
                 <label htmlFor="role-select">Role</label>
-                <select id="role-select" value={role} onChange={handleRoleChange} required>
+                <select id="role-select" value={role} onChange={handleRoleChange} required autoComplete='off'>
                     <option value="">Select Role</option>
                     <option value="user">User</option>
                     <option value="admin">Admin</option>
