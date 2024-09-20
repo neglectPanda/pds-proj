@@ -46,3 +46,10 @@ export {
     seePasswordOne,
     seePasswordTwo
 };
+
+// export const activitiesLogo = '/images/activities logo.png';
+// export const userListLogo = '/images/ user list logo.png';
+// export const requestsLogo = '/images/requests.png';
+// export const analyticsLogo = '/images/analytics.png';
+// export const mainMenuLogo = '/images/main menu logo.png';
+// export const logoutLogo = '/images/logout.png';
